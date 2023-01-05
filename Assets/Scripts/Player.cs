@@ -49,9 +49,7 @@ public class Player : MonoBehaviour
             if (Input.GetKey(KeyCode.S) && (Input.GetKeyDown(KeyCode.A) == false | Input.GetKeyDown(KeyCode.D) == false))
             {
                 rb.constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
-            }
-
-            if (Input.GetKey(KeyCode.A) | Input.GetKey(KeyCode.D))
+            } else if (Input.GetKey(KeyCode.A) | Input.GetKey(KeyCode.D))
             {
                 rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
                 if (Input.GetKey(KeyCode.W))
