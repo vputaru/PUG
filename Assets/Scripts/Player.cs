@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     public float speed;
     bool facingRight = true;
 
-    bool backAtWall;
     bool isGrounded;
     bool isOnTopOfWall;
     public Transform groundCheck;
